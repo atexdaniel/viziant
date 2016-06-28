@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Viziant - Variant Configuration Visualisation - with JointJS</title>
+
+  <link type="text/css" href="joint.css" rel="stylesheet"/>
+  <link type="text/css" href="viziant.css" rel="stylesheet"/>
+
+  <script language="javascript" type="text/javascript" src="jquery.min.js"></script>
+  <script language="javascript" type="text/javascript" src="lodash.min.js"></script>
+  <script language="javascript" type="text/javascript" src="backbone-min.js"></script>
+  <script language="javascript" type="text/javascript" src="joint.js"></script>
+  <script language="javascript" type="text/javascript" src="joint.layout.DirectedGraph.js"></script>
+  <script language="javascript" type="text/javascript" src="FileSaver.min.js"></script>
+  <script language="javascript" type="text/javascript" src="Blob.js"></script>
+  <script language="javascript" type="text/javascript" src="strip-json-comments.js"></script>
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="view">
+      <div id="paper" class="paper"></div>
+    </div>
+    <div id="overviewPaper" class="paper"></div>
+    <div id="buttons">
+      <div id="saveButton" class="button">
+        <img src="save_32.png">
+      </div>
+      <div id="fetchButton" class="button">
+        <img src="fetch_32.gif">
+      </div>
+      <div id="createContentManagerButton" class="button">CM</div>
+      <div id="createVariantButton" class="button">V</div>
+      <div id="createMapperButton" class="button">M</div>
+      <div id="createComposerButton" class="button">C</div>
+    </div>
+
+    <dialog id="createDialog">
+      <h3>Create new ContentManager</h3>
+      <section>
+        <label>Name</label>
+        <input id="newElementName"/>
+      </section>
+      <button id="cancel">Cancel</button>
+      <button id="save">Save</button>
+    </dialog>
+
+  </div>
+  <script language="javascript" type="text/javascript" src="viziant.js"></script>
+</body>
+</html>

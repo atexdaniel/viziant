@@ -1,0 +1,22 @@
+{
+  "contentmanagers": {},
+  "variants": {
+    "teaser-variant": {
+      "defaultComposer": "ifMainAspectMapperThenIncludeAll",
+      "mappers": {
+        "ArticleBean": "article-to-teaser",
+        "ImageBean": "image-to-teaser",
+        "atex.Meta": "excludeAspect"
+      },
+      "composers": {
+        "ImageBean": "image-composer"
+      }
+    }
+  },
+  "mappers": {
+    "excludeAspect": {
+      "class": "ExclusionAspectMapper"
+    }
+  },
+  "composers": {}
+}

@@ -1,0 +1,63 @@
+.paper {
+    border: thin;
+}
+
+#overviewPaper {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin: 10px;
+    padding: 5px;
+    background: lightblue;
+    opacity: 0.4;
+    border-color: bisque;
+    border: thin;
+}
+
+.button {
+    float: left;
+    width: 32px;
+    height: 32px;
+    border: thin;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+#buttons {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    line-height: 32px;
+}
+
+#createContentManagerButton {
+    background-color: #6F9CDC;
+    color: white;
+}
+
+#createVariantButton {
+    background-color: #8BCA6B;
+    color: white;
+}
+
+#createMapperButton {
+    background-color: #FFD559;
+}
+
+#createComposerButton {
+    background-color: #FFAD60;
+}
+
+#view {
+    overflow: hidden;
+}
+
+dialog {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,74 @@
+{
+    "composers": {
+        "atex.onecms.ContentManager.ifMainAspectMapperThenIncludeMappedOnly": {
+            "classpath": "com.atex.onecms.content.mapping.IfMainAspectMapperThenIncludeMappedOnly"
+        },
+        "atex.onecms.ContentManager.include": {
+            "classpath": "com.atex.onecms.content.mapping.IdentityMapping"
+        },
+        "atex.onecms.variantmodel.variantModelComposer": {
+            "classpath": "com.atex.onecms.content.variantmodel.VariantModelComposer"
+        },
+        "com.atex.filedelivery.excludeImagesComposer": {
+            "classpath": "com.atex.onecms.ws.fileservice.ExcludeImageMapping"
+        },
+        "com.atex.indexing.indexComposer": {
+            "classpath": "com.atex.onecms.content.mapping.IndexComposer"
+        },
+        "composer-com.atex.onecms.app.user.UserDataContentComposer": {
+            "classpath": "com.atex.onecms.app.user.UserDataContentComposer"
+        }
+    },
+    "contentmanagers": {
+        "3.105": {
+            "defaultAccessStrategy": "ALL",
+            "variants": {
+                "atex.onecms.variantmodel": "atex.onecms.variantmodel.variantconfig",
+                "com.atex.filedelivery": "com.atex.filedelivery.variantconfig",
+                "com.atex.indexing": "com.atex.indexing.variantconfig",
+                "onecms": "atex.onecms.ContentManager.variant.onecms"
+            }
+        }
+    },
+    "mappers": {
+        "atex.onecms.ContentManager.includeAspect": {
+            "classpath": "com.atex.onecms.content.mapping.IdentityAspectMapper"
+        },
+        "atex.onecms.variantmodel.converterConfigMapper": {
+            "classpath": "com.atex.onecms.content.variantmodel.ConverterConfigMapper"
+        },
+        "atex.onecms.variantmodel.variantConfigMapper": {
+            "classpath": "com.atex.onecms.content.variantmodel.VariantConfigMapper"
+        }
+    },
+    "variants": {
+        "atex.onecms.ContentManager.variant.onecms": {
+            "composers": {
+                "com.atex.onecms.app.user.UserDataBean": "composer-com.atex.onecms.app.user.UserDataContentComposer"
+            },
+            "defaultComposer": "atex.onecms.ContentManager.include",
+            "mappers": {}
+        },
+        "atex.onecms.variantmodel.variantconfig": {
+            "composers": {
+                "com.atex.onecms.content.ContentManagerConfigBean": "atex.onecms.variantmodel.variantModelComposer"
+            },
+            "defaultComposer": "atex.onecms.ContentManager.ifMainAspectMapperThenIncludeMappedOnly",
+            "mappers": {
+                "com.atex.onecms.content.ContentManagerConfigBean": "atex.onecms.ContentManager.includeAspect",
+                "com.atex.onecms.content.mapping.MappingConfigBean": "atex.onecms.variantmodel.converterConfigMapper",
+                "com.atex.onecms.content.mapping.VariantConfig": "atex.onecms.variantmodel.variantConfigMapper"
+            }
+        },
+        "com.atex.filedelivery.variantconfig": {
+            "composers": {},
+            "defaultComposer": "com.atex.filedelivery.excludeImagesComposer",
+            "mappers": {}
+        },
+        "com.atex.indexing.variantconfig": {
+            "composers": {},
+            "defaultComposer": "com.atex.indexing.indexComposer",
+            "mappers": {}
+        }
+    }
+}

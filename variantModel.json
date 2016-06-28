@@ -1,0 +1,212 @@
+{
+   "variants" : {
+      "com.atex.siteroot.variantconfig" : {
+         "mappers" : {},
+         "defaultComposers" : [],
+         "composers" : {
+            "p.siteengine.SiteRoot" : []
+         }
+      },
+      "atex.onecms.indexing.variantconfig" : {
+         "composers" : {},
+         "mappers" : {
+            "atex.Metadata" : "atex.onecms.indexing.metadata"
+         },
+         "defaultComposers" : [
+            "atex.onecms.indexing.indexComposer"
+         ]
+      },
+      "com.atex.gong.wiring.statistics.variantconfig" : {
+         "defaultComposers" : [],
+         "mappers" : {
+            "com.atex.onecms.app.siteengine.SiteBean" : "mapper-com.atex.gong.wiring.statistics.SiteToThinAspectMapper",
+            "com.atex.standard.article.ArticleBean" : "mapper-com.atex.gong.wiring.statistics.ArticleToThinAspectMapper",
+            "com.atex.onecms.app.siteengine.PageBean" : "mapper-com.atex.gong.wiring.statistics.PageToThinAspectMapper"
+         },
+         "composers" : {
+            "p.siteengine.SiteRoot" : []
+         }
+      },
+      "com.atex.filedelivery.variantconfig" : {
+         "defaultComposers" : [
+            "com.atex.filedelivery.excludeImagesComposer"
+         ],
+         "mappers" : {},
+         "composers" : {}
+      },
+      "atex.onecms.variantmodel.variantconfig" : {
+         "mappers" : {
+            "com.atex.onecms.content.mapping.VariantConfig" : "atex.onecms.variantmodel.variantConfigMapper",
+            "com.atex.onecms.content.ContentManagerConfigBean" : "atex.onecms.ContentManager.includeAspect",
+            "com.atex.onecms.content.callback.CustomCallbackConfigBean" : "atex.onecms.variantmodel.converterConfigMapper"
+         },
+         "defaultComposers" : [
+            "atex.onecms.ContentManager.ifMainAspectMapperThenIncludeMappedOnly"
+         ],
+         "composers" : {
+            "com.atex.onecms.content.ContentManagerConfigBean" : []
+         }
+      },
+      "com.atex.plugins.socialauth.provider.variantconfig" : {
+         "composers" : {
+            "com.atex.plugins.socialauth.google.GoogleProvider" : [],
+            "com.atex.plugins.socialauth.facebook.FacebookProvider" : []
+         },
+         "defaultComposers" : [],
+         "mappers" : {}
+      },
+      "com.atex.plugins.social.sharing.variantconfig" : {
+         "composers" : {
+            "com.atex.plugins.social.sharing.SocialSharingInfo" : []
+         },
+         "mappers" : {
+            "com.atex.standard.article.ArticleBean" : "mapper-com.atex.gong.wiring.social.sharing.ArticleToSocialSharingAspectMapper"
+         },
+         "defaultComposers" : [
+            "atex.onecms.ContentManager.ifMainAspectMapperThenIncludeMappedOnly"
+         ]
+      },
+      "atex.onecms.ContentManager.variant.onecms" : {
+         "mappers" : {},
+         "defaultComposers" : [
+            "atex.onecms.ContentManager.include"
+         ],
+         "composers" : {
+            "com.atex.onecms.app.user.UserDataBean" : []
+         }
+      },
+      "com.atex.plugins.grid.teaserable.variantconfig" : {
+         "mappers" : {
+            "com.atex.standard.article.ArticleBean" : "mapper-com.atex.gong.wiring.grid.ArticleToTeaserableAspectMapper"
+         },
+         "defaultComposers" : [],
+         "composers" : {}
+      },
+      "atex.onecms.ContentManager.variant.com.atex.plugins.search.searchresultview" : {
+         "mappers" : {
+            "com.atex.standard.article.ArticleBean" : "mapper-com.atex.gong.wiring.search.ArticleToSearchResultViewAspectMapper"
+         },
+         "defaultComposers" : [],
+         "composers" : {}
+      },
+      "com.atex.site.variantconfig" : {
+         "mappers" : {},
+         "defaultComposers" : [],
+         "composers" : {
+            "com.atex.onecms.app.siteengine.SiteBean" : []
+         }
+      },
+      "com.atex.plugins.teaser.teaserable.variantconfig" : {
+         "defaultComposers" : [],
+         "mappers" : {},
+         "composers" : {
+            "com.atex.standard.article.ArticleBean" : []
+         }
+      },
+      "com.atex.page.variantconfig" : {
+         "defaultComposers" : [],
+         "mappers" : {},
+         "composers" : {
+            "com.atex.onecms.app.siteengine.SiteBean" : [],
+            "com.atex.onecms.app.siteengine.PageBean" : []
+         }
+      },
+      "com.atex.plugins.gallery.image.variantconfig" : {
+         "composers" : {},
+         "defaultComposers" : [
+            "atex.onecms.ContentManager.ifMainAspectMapperThenIncludeMappedOnly"
+         ],
+         "mappers" : {
+            "atex.Image" : "atex.onecms.ContentManager.includeAspect",
+            "com.atex.standard.image.ImageContentDataBean" : "mapper-com.atex.gong.wiring.gallery.ImageToGalleryAspectMapper",
+            "atex.ImageEditInfo" : "atex.onecms.ContentManager.includeAspect"
+         }
+      },
+      "com.atex.plugins.comments.thread.variantconfig" : {
+         "composers" : {
+            "com.atex.plugins.comments.ThreadBean" : []
+         },
+         "mappers" : {
+            "com.atex.standard.article.ArticleBean" : "mapper-com.atex.gong.wiring.comments.ArticleToThreadAspectMapper"
+         },
+         "defaultComposers" : [
+            "atex.onecms.ContentManager.exclude"
+         ]
+      },
+      "atex.onecms.page.variantconfig" : {
+         "composers" : {},
+         "defaultComposers" : [
+            "atex.onecms.ContentManager.ifAnyAspectMapperThenIncludeAll"
+         ],
+         "mappers" : {
+            "com.atex.onecms.app.siteengine.SiteBean" : "atex.onecms.ContentManager.includeAspect",
+            "com.atex.onecms.app.siteengine.PageBean" : "atex.onecms.ContentManager.includeAspect"
+         }
+      },
+      "com.atex.plugins.teaser.image.variantconfig" : {
+         "mappers" : {},
+         "defaultComposers" : [],
+         "composers" : {
+            "com.atex.standard.image.ImageContentDataBean" : []
+         }
+      }
+   },
+   "composers" : {},
+   "mappers" : {
+      "mapper-com.atex.gong.wiring.search.ArticleToSearchResultViewAspectMapper" : {
+         "classpath" : "com.atex.gong.wiring.search.ArticleToSearchResultViewAspectMapper"
+      },
+      "mapper-com.atex.gong.wiring.gallery.ImageToGalleryAspectMapper" : {
+         "classpath" : "com.atex.gong.wiring.gallery.ImageToGalleryAspectMapper"
+      },
+      "mapper-com.atex.gong.wiring.grid.ArticleToTeaserableAspectMapper" : {
+         "classpath" : "com.atex.gong.wiring.grid.ArticleToTeaserableAspectMapper"
+      },
+      "mapper-com.atex.gong.wiring.statistics.SiteToThinAspectMapper" : {
+         "classpath" : "com.atex.gong.wiring.statistics.SiteToThinAspectMapper"
+      },
+      "mapper-com.atex.gong.wiring.comments.ArticleToThreadAspectMapper" : {
+         "classpath" : "com.atex.gong.wiring.comments.ArticleToThreadAspectMapper"
+      },
+      "mapper-com.atex.gong.wiring.statistics.PageToThinAspectMapper" : {
+         "classpath" : "com.atex.gong.wiring.statistics.PageToThinAspectMapper"
+      },
+      "atex.onecms.variantmodel.variantConfigMapper" : {
+         "classpath" : "com.atex.onecms.content.variantmodel.VariantConfigMapper"
+      },
+      "atex.onecms.variantmodel.converterConfigMapper" : {
+         "classpath" : "com.atex.onecms.content.variantmodel.CallbackConfigMapper"
+      },
+      "mapper-com.atex.gong.wiring.social.sharing.ArticleToSocialSharingAspectMapper" : {
+         "classpath" : "com.atex.gong.wiring.social.sharing.ArticleToSocialSharingAspectMapper"
+      },
+      "mapper-com.atex.gong.wiring.statistics.ArticleToThinAspectMapper" : {
+         "classpath" : "com.atex.gong.wiring.statistics.ArticleToThinAspectMapper"
+      }
+   },
+   "contentmanagers" : {
+      "3.104" : {
+         "variants" : {
+            "com.atex.plugins.gallery.image" : "com.atex.plugins.gallery.image.variantconfig",
+            "com.atex.plugins.teaser.teaserable" : "com.atex.plugins.teaser.teaserable.variantconfig",
+            "com.atex.plugins.search.searchresultview" : "atex.onecms.ContentManager.variant.com.atex.plugins.search.searchresultview",
+            "com.atex.site" : "com.atex.site.variantconfig",
+            "com.atex.plugins.grid.teaserable" : "com.atex.plugins.grid.teaserable.variantconfig",
+            "com.atex.siteroot" : "com.atex.siteroot.variantconfig",
+            "com.atex.plugins.social.sharing" : "com.atex.plugins.social.sharing.variantconfig",
+            "com.atex.page" : "com.atex.page.variantconfig",
+            "com.atex.plugins.teaser.image" : "com.atex.plugins.teaser.image.variantconfig",
+            "onecms" : "atex.onecms.ContentManager.variant.onecms",
+            "atex.onecms.variantmodel" : "atex.onecms.variantmodel.variantconfig",
+            "statistics.thin" : "com.atex.gong.wiring.statistics.variantconfig",
+            "com.atex.plugins.socialauth.provider" : "com.atex.plugins.socialauth.provider.variantconfig",
+            "atex.onecms.indexing" : "atex.onecms.indexing.variantconfig",
+            "atex.onecms.page" : "atex.onecms.page.variantconfig",
+            "com.atex.plugins.comments.thread" : "com.atex.plugins.comments.thread.variantconfig",
+            "com.atex.filedelivery" : "com.atex.filedelivery.variantconfig"
+         },
+         "defaultAccessStrategy" : "ALL"
+      }
+   }
+}
+

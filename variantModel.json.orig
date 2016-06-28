@@ -1,0 +1,73 @@
+{
+    "contentmanagers": {
+        "ContentManager1": {
+            "defaultAccessStrategy": "all",
+            "variants": {
+                "teaser": "teaser-variant"
+            }
+        },
+        "ContentManager2": {
+            "defaultAccessStrategy": "none",
+            "variants": {
+                "as-teaser": "teaser-variant",
+                "custom": "custom-variant"
+            }
+        }
+    },
+    "variants": {
+        "teaser-variant": {
+            "defaultComposer": "ifMainAspectMapperThenIncludeAll",
+            "mappers": {
+                "ArticleBean": "article-to-teaser",
+                "ImageBean": "image-to-teaser",
+                "atex.Meta": "excludeAspect"
+            },
+            "composers": {
+                "ImageBean": "image-composer"
+            }
+        },
+        "custom-variant": {
+            "defaultComposer": "custom-composer",
+            "composers": {
+                "ImageBean": "image-composer"
+            }
+        },
+        "gurka-variant": {
+            //"defaultComposer": "custom-composer",
+            //"composers": {
+            //    "ImageBean": "image-composer"
+            //}
+        }
+    },
+    "mappers": {
+        "article-to-teaser": {
+            "classpath": "MyArticleToTeaserMapper"
+        },
+        "image-to-teaser": {
+            //"classpath": "MyImageToTeaserMapper"
+        },
+        "excludeAspect": {
+            "classpath": "ExclusionAspectMapper"
+        }
+    },
+    "composers": {
+        "ifMainAspectMapperThenIncludeAll": {
+            "classpath": "IfMainAspectMapperThenIncludeAll"
+        },
+        "image-composer": {
+            "classpath": "MyCustomComposer",
+            "config": {
+                "_type": "MyCustomComposerConfig",
+                "something": "X"
+            }
+        },
+        "custom-composer": {
+            "classpath": "MyCustomComposer",
+            "config": {
+                "_type": "MyCustomComposerConfig",
+                "something": "Y"
+            }
+        }
+    }
+}
+

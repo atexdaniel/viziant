@@ -1,0 +1,969 @@
+{
+  "cells": [
+
+
+    {
+      "type": "basic.Rect",
+      "position": {
+        "x": 0,
+        "y": 212.8
+      },
+      "size": {
+        "width": 154,
+        "height": 36.4
+      },
+      "angle": 0,
+      "id": "ContentManager1",
+      "onecmsVariantData": {
+        "category": "contentManager",
+        "defaultAccessStrategy": "all"
+      },
+      "z": 1,
+      "attrs": {
+        "rect": {
+          "fill": "#6F9CDC",
+          "stroke": "#555",
+          "width": 154,
+          "height": 36.4,
+          "rx": 5,
+          "ry": 5
+        },
+        "text": {
+          "text": "ContentManager1",
+          "fill": "white",
+          "font-family": "monospace"
+        }
+      }
+    },
+
+
+
+    {
+      "type": "basic.Rect",
+      "position": {
+        "x": 0,
+        "y": 465.6
+      },
+      "size": {
+        "width": 154,
+        "height": 36.4
+      },
+      "angle": 0,
+      "id": "ContentManager2",
+      "onecmsVariantData": {
+        "category": "contentManager",
+        "defaultAccessStrategy": "none"
+      },
+      "z": 2,
+      "attrs": {
+        "rect": {
+          "fill": "#6F9CDC",
+          "stroke": "#555",
+          "width": 154,
+          "height": 36.4,
+          "rx": 5,
+          "ry": 5
+        },
+        "text": {
+          "text": "ContentManager2",
+          "fill": "white",
+          "font-family": "monospace"
+        }
+      }
+    },
+    {
+      "type": "basic.Rect",
+      "position": {
+        "x": 244,
+        "y": 232.8
+      },
+      "size": {
+        "width": 144.76000000000002,
+        "height": 36.4
+      },
+      "angle": 0,
+      "id": "teaser-variant",
+      "onecmsVariantData": {
+        "category": "variant"
+      },
+      "z": 3,
+      "attrs": {
+        "rect": {
+          "fill": "#8BCA6B",
+          "stroke": "#555",
+          "width": 144.76000000000002,
+          "height": 36.4,
+          "rx": 5,
+          "ry": 5
+        },
+        "text": {
+          "text": "teaser-variant",
+          "fill": "white",
+          "font-family": "monospace"
+        }
+      }
+    },
+    {
+      "type": "basic.Rect",
+      "position": {
+        "x": 244,
+        "y": 543.8
+      },
+      "size": {
+        "width": 144.76000000000002,
+        "height": 36.4
+      },
+      "angle": 0,
+      "id": "custom-variant",
+      "onecmsVariantData": {
+        "category": "variant"
+      },
+      "z": 4,
+      "attrs": {
+        "rect": {
+          "fill": "#8BCA6B",
+          "stroke": "#555",
+          "width": 144.76000000000002,
+          "height": 36.4,
+          "rx": 5,
+          "ry": 5
+        },
+        "text": {
+          "text": "custom-variant",
+          "fill": "white",
+          "font-family": "monospace"
+        }
+      }
+    },
+    {
+      "type": "basic.Rect",
+      "position": {
+        "x": 9.23999999999998,
+        "y": 581.9999999999999
+      },
+      "size": {
+        "width": 135.52000000000004,
+        "height": 36.4
+      },
+      "angle": 0,
+      "id": "gurka-variant",
+      "onecmsVariantData": {
+        "category": "variant"
+      },
+      "z": 5,
+      "attrs": {
+        "rect": {
+          "fill": "#8BCA6B",
+          "stroke": "#555",
+          "width": 135.52000000000004,
+          "height": 36.4,
+          "rx": 5,
+          "ry": 5
+        },
+        "text": {
+          "text": "gurka-variant",
+          "fill": "white",
+          "font-family": "monospace"
+        }
+      }
+    },
+    {
+      "type": "basic.Rect",
+      "position": {
+        "x": 548.06,
+        "y": 116.39999999999999
+      },
+      "size": {
+        "width": 172.48,
+        "height": 36.4
+      },
+      "angle": 0,
+      "id": "article-to-teaser",
+      "onecmsVariantData": {
+        "category": "mapper"
+      },
+      "z": 6,
+      "attrs": {
+        "rect": {
+          "fill": "#FFD559",
+          "stroke": "#555",
+          "width": 172.48,
+          "height": 36.4,
+          "rx": 5,
+          "ry": 5
+        },
+        "text": {
+          "text": "article-to-teaser",
+          "font-family": "monospace"
+        }
+      }
+    },
+    {
+      "type": "basic.Rect",
+      "position": {
+        "x": 557.3,
+        "y": 232.8
+      },
+      "size": {
+        "width": 154,
+        "height": 36.4
+      },
+      "angle": 0,
+      "id": "image-to-teaser",
+      "onecmsVariantData": {
+        "category": "mapper"
+      },
+      "z": 7,
+      "attrs": {
+        "rect": {
+          "fill": "#FFD559",
+          "stroke": "#555",
+          "width": 154,
+          "height": 36.4,
+          "rx": 5,
+          "ry": 5
+        },
+        "text": {
+          "text": "image-to-teaser",
+          "font-family": "monospace"
+        }
+      }
+    },
+    {
+      "type": "basic.Rect",
+      "position": {
+        "x": 566.54,
+        "y": 349.2
+      },
+      "size": {
+        "width": 135.52000000000004,
+        "height": 36.4
+      },
+      "angle": 0,
+      "id": "excludeAspect",
+      "onecmsVariantData": {
+        "category": "mapper"
+      },
+      "z": 8,
+      "attrs": {
+        "rect": {
+          "fill": "#FFD559",
+          "stroke": "#555",
+          "width": 135.52000000000004,
+          "height": 36.4,
+          "rx": 5,
+          "ry": 5
+        },
+        "text": {
+          "text": "excludeAspect",
+          "font-family": "monospace"
+        }
+      }
+    },
+    {
+      "type": "basic.Rect",
+      "position": {
+        "x": 478.75999999999993,
+        "y": 3.552713678800501E-15
+      },
+      "size": {
+        "width": 311.08000000000004,
+        "height": 36.4
+      },
+      "angle": 0,
+      "id": "ifMainAspectMapperThenIncludeAll",
+      "onecmsVariantData": {
+        "category": "composer"
+      },
+      "z": 9,
+      "attrs": {
+        "rect": {
+          "fill": "#FFAD60",
+          "stroke": "#555",
+          "width": 311.08000000000004,
+          "height": 36.4,
+          "rx": 5,
+          "ry": 5
+        },
+        "text": {
+          "text": "ifMainAspectMapperThenIncludeAll",
+          "font-family": "monospace"
+        }
+      }
+    },
+    {
+      "type": "basic.Rect",
+      "position": {
+        "x": 561.92,
+        "y": 465.59999999999997
+      },
+      "size": {
+        "width": 144.76000000000002,
+        "height": 36.4
+      },
+      "angle": 0,
+      "id": "image-composer",
+      "onecmsVariantData": {
+        "category": "composer",
+        "config": {
+          "_type": "MyCustomComposerConfig",
+          "something": "X"
+        }
+      },
+      "z": 10,
+      "attrs": {
+        "rect": {
+          "fill": "#FFAD60",
+          "stroke": "#555",
+          "width": 144.76000000000002,
+          "height": 36.4,
+          "rx": 5,
+          "ry": 5
+        },
+        "text": {
+          "text": "image-composer",
+          "font-family": "monospace"
+        }
+      }
+    },
+    {
+      "type": "basic.Rect",
+      "position": {
+        "x": 557.3,
+        "y": 581.9999999999999
+      },
+      "size": {
+        "width": 154,
+        "height": 36.4
+      },
+      "angle": 0,
+      "id": "custom-composer",
+      "onecmsVariantData": {
+        "category": "composer",
+        "config": {
+          "_type": "MyCustomComposerConfig",
+          "something": "Y"
+        }
+      },
+      "z": 11,
+      "attrs": {
+        "rect": {
+          "fill": "#FFAD60",
+          "stroke": "#555",
+          "width": 154,
+          "height": 36.4,
+          "rx": 5,
+          "ry": 5
+        },
+        "text": {
+          "text": "custom-composer",
+          "font-family": "monospace"
+        }
+      }
+    },
+    {
+      "type": "basic.Rect",
+      "position": {
+        "x": 921.4199999999998,
+        "y": 116.39999999999999
+      },
+      "size": {
+        "width": 227.92000000000002,
+        "height": 36.4
+      },
+      "angle": 0,
+      "id": "class-MyArticleToTeaserMapper",
+      "onecmsVariantData": {
+        "category": "javaClass"
+      },
+      "z": 12,
+      "attrs": {
+        "rect": {
+          "fill": "white",
+          "stroke": "#555",
+          "width": 227.92000000000002,
+          "height": 36.4,
+          "rx": 5,
+          "ry": 5
+        },
+        "text": {
+          "text": "MyArticleToTeaserMapper",
+          "font-family": "monospace"
+        }
+      }
+    },
+    {
+      "type": "basic.Rect",
+      "position": {
+        "x": 930.6599999999999,
+        "y": 349.2
+      },
+      "size": {
+        "width": 209.44000000000003,
+        "height": 36.4
+      },
+      "angle": 0,
+      "id": "class-ExclusionAspectMapper",
+      "onecmsVariantData": {
+        "category": "javaClass"
+      },
+      "z": 13,
+      "attrs": {
+        "rect": {
+          "fill": "white",
+          "stroke": "#555",
+          "width": 209.44000000000003,
+          "height": 36.4,
+          "rx": 5,
+          "ry": 5
+        },
+        "text": {
+          "text": "ExclusionAspectMapper",
+          "font-family": "monospace"
+        }
+      }
+    },
+    {
+      "type": "basic.Rect",
+      "position": {
+        "x": 879.8399999999999,
+        "y": 3.552713678800501E-15
+      },
+      "size": {
+        "width": 311.08000000000004,
+        "height": 36.4
+      },
+      "angle": 0,
+      "id": "class-IfMainAspectMapperThenIncludeAll",
+      "onecmsVariantData": {
+        "category": "javaClass"
+      },
+      "z": 14,
+      "attrs": {
+        "rect": {
+          "fill": "white",
+          "stroke": "#555",
+          "width": 311.08000000000004,
+          "height": 36.4,
+          "rx": 5,
+          "ry": 5
+        },
+        "text": {
+          "text": "IfMainAspectMapperThenIncludeAll",
+          "font-family": "monospace"
+        }
+      }
+    },
+    {
+      "type": "basic.Rect",
+      "position": {
+        "x": 953.7599999999999,
+        "y": 523.8
+      },
+      "size": {
+        "width": 163.24,
+        "height": 36.4
+      },
+      "angle": 0,
+      "id": "class-MyCustomComposer",
+      "onecmsVariantData": {
+        "category": "javaClass"
+      },
+      "z": 15,
+      "attrs": {
+        "rect": {
+          "fill": "white",
+          "stroke": "#555",
+          "width": 163.24,
+          "height": 36.4,
+          "rx": 5,
+          "ry": 5
+        },
+        "text": {
+          "text": "MyCustomComposer",
+          "font-family": "monospace"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "ContentManager1"
+      },
+      "target": {
+        "id": "teaser-variant"
+      },
+      "id": "ContentManager1-(teaser)-teaser-variant",
+      "labels": [
+        {
+          "position": 0.5,
+          "attrs": {
+            "text": {
+              "text": "teaser",
+              "font-size": 14,
+              "font-family": "monospace"
+            }
+          }
+        }
+      ],
+      "z": 16,
+      "attrs": {
+        ".connection": {
+          "stroke": "black"
+        },
+        ".marker-target": {
+          "fill": "grey",
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "ContentManager2"
+      },
+      "target": {
+        "id": "teaser-variant"
+      },
+      "id": "ContentManager2-(as-teaser)-teaser-variant",
+      "labels": [
+        {
+          "position": 0.5,
+          "attrs": {
+            "text": {
+              "text": "as-teaser",
+              "font-size": 14,
+              "font-family": "monospace"
+            }
+          }
+        }
+      ],
+      "z": 17,
+      "attrs": {
+        ".connection": {
+          "stroke": "black"
+        },
+        ".marker-target": {
+          "fill": "grey",
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "ContentManager2"
+      },
+      "target": {
+        "id": "custom-variant"
+      },
+      "id": "ContentManager2-(custom)-custom-variant",
+      "labels": [
+        {
+          "position": 0.5,
+          "attrs": {
+            "text": {
+              "text": "custom",
+              "font-size": 14,
+              "font-family": "monospace"
+            }
+          }
+        }
+      ],
+      "z": 18,
+      "attrs": {
+        ".connection": {
+          "stroke": "black"
+        },
+        ".marker-target": {
+          "fill": "grey",
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "teaser-variant"
+      },
+      "target": {
+        "id": "ifMainAspectMapperThenIncludeAll"
+      },
+      "id": "teaser-variant-(defaultComposer)-ifMainAspectMapperThenIncludeAll",
+      "labels": [
+        {
+          "position": 0.5,
+          "attrs": {
+            "text": {
+              "text": "defaultComposer",
+              "font-size": 14,
+              "font-family": "monospace"
+            }
+          }
+        }
+      ],
+      "z": 19,
+      "attrs": {
+        ".connection": {
+          "stroke": "black"
+        },
+        ".marker-target": {
+          "fill": "grey",
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "teaser-variant"
+      },
+      "target": {
+        "id": "article-to-teaser"
+      },
+      "id": "teaser-variant-(ArticleBean)-article-to-teaser",
+      "labels": [
+        {
+          "position": 0.5,
+          "attrs": {
+            "text": {
+              "text": "ArticleBean",
+              "font-size": 14,
+              "font-family": "monospace"
+            }
+          }
+        }
+      ],
+      "z": 20,
+      "attrs": {
+        ".connection": {
+          "stroke": "black"
+        },
+        ".marker-target": {
+          "fill": "grey",
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "teaser-variant"
+      },
+      "target": {
+        "id": "image-to-teaser"
+      },
+      "id": "teaser-variant-(ImageBean)-image-to-teaser",
+      "labels": [
+        {
+          "position": 0.5,
+          "attrs": {
+            "text": {
+              "text": "ImageBean",
+              "font-size": 14,
+              "font-family": "monospace"
+            }
+          }
+        }
+      ],
+      "z": 21,
+      "attrs": {
+        ".connection": {
+          "stroke": "black"
+        },
+        ".marker-target": {
+          "fill": "grey",
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "teaser-variant"
+      },
+      "target": {
+        "id": "excludeAspect"
+      },
+      "id": "teaser-variant-(atex.Meta)-excludeAspect",
+      "labels": [
+        {
+          "position": 0.5,
+          "attrs": {
+            "text": {
+              "text": "atex.Meta",
+              "font-size": 14,
+              "font-family": "monospace"
+            }
+          }
+        }
+      ],
+      "z": 22,
+      "attrs": {
+        ".connection": {
+          "stroke": "black"
+        },
+        ".marker-target": {
+          "fill": "grey",
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "teaser-variant"
+      },
+      "target": {
+        "id": "image-composer"
+      },
+      "id": "teaser-variant-(ImageBean)-image-composer",
+      "labels": [
+        {
+          "position": 0.5,
+          "attrs": {
+            "text": {
+              "text": "ImageBean",
+              "font-size": 14,
+              "font-family": "monospace"
+            }
+          }
+        }
+      ],
+      "z": 23,
+      "attrs": {
+        ".connection": {
+          "stroke": "black"
+        },
+        ".marker-target": {
+          "fill": "grey",
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "custom-variant"
+      },
+      "target": {
+        "id": "custom-composer"
+      },
+      "id": "custom-variant-(defaultComposer)-custom-composer",
+      "labels": [
+        {
+          "position": 0.5,
+          "attrs": {
+            "text": {
+              "text": "defaultComposer",
+              "font-size": 14,
+              "font-family": "monospace"
+            }
+          }
+        }
+      ],
+      "z": 24,
+      "attrs": {
+        ".connection": {
+          "stroke": "black"
+        },
+        ".marker-target": {
+          "fill": "grey",
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "custom-variant"
+      },
+      "target": {
+        "id": "image-composer"
+      },
+      "id": "custom-variant-(ImageBean)-image-composer",
+      "labels": [
+        {
+          "position": 0.5,
+          "attrs": {
+            "text": {
+              "text": "ImageBean",
+              "font-size": 14,
+              "font-family": "monospace"
+            }
+          }
+        }
+      ],
+      "z": 25,
+      "attrs": {
+        ".connection": {
+          "stroke": "black"
+        },
+        ".marker-target": {
+          "fill": "grey",
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "article-to-teaser"
+      },
+      "target": {
+        "id": "class-MyArticleToTeaserMapper"
+      },
+      "id": "article-to-teaser-()-class-MyArticleToTeaserMapper",
+      "labels": [
+        {
+          "position": 0.5,
+          "attrs": {
+            "text": {
+              "text": "",
+              "font-size": 14,
+              "font-family": "monospace"
+            }
+          }
+        }
+      ],
+      "z": 26,
+      "attrs": {
+        ".connection": {
+          "stroke": "black"
+        },
+        ".marker-target": {
+          "fill": "grey",
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "excludeAspect"
+      },
+      "target": {
+        "id": "class-ExclusionAspectMapper"
+      },
+      "id": "excludeAspect-()-class-ExclusionAspectMapper",
+      "labels": [
+        {
+          "position": 0.5,
+          "attrs": {
+            "text": {
+              "text": "",
+              "font-size": 14,
+              "font-family": "monospace"
+            }
+          }
+        }
+      ],
+      "z": 27,
+      "attrs": {
+        ".connection": {
+          "stroke": "black"
+        },
+        ".marker-target": {
+          "fill": "grey",
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "ifMainAspectMapperThenIncludeAll"
+      },
+      "target": {
+        "id": "class-IfMainAspectMapperThenIncludeAll"
+      },
+      "id": "ifMainAspectMapperThenIncludeAll-()-class-IfMainAspectMapperThenIncludeAll",
+      "labels": [
+        {
+          "position": 0.5,
+          "attrs": {
+            "text": {
+              "text": "",
+              "font-size": 14,
+              "font-family": "monospace"
+            }
+          }
+        }
+      ],
+      "z": 28,
+      "attrs": {
+        ".connection": {
+          "stroke": "black"
+        },
+        ".marker-target": {
+          "fill": "grey",
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "image-composer"
+      },
+      "target": {
+        "id": "class-MyCustomComposer"
+      },
+      "id": "image-composer-()-class-MyCustomComposer",
+      "labels": [
+        {
+          "position": 0.5,
+          "attrs": {
+            "text": {
+              "text": "",
+              "font-size": 14,
+              "font-family": "monospace"
+            }
+          }
+        }
+      ],
+      "z": 29,
+      "attrs": {
+        ".connection": {
+          "stroke": "black"
+        },
+        ".marker-target": {
+          "fill": "grey",
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "custom-composer"
+      },
+      "target": {
+        "id": "class-MyCustomComposer"
+      },
+      "id": "custom-composer-()-class-MyCustomComposer",
+      "labels": [
+        {
+          "position": 0.5,
+          "attrs": {
+            "text": {
+              "text": "",
+              "font-size": 14,
+              "font-family": "monospace"
+            }
+          }
+        }
+      ],
+      "z": 30,
+      "attrs": {
+        ".connection": {
+          "stroke": "black"
+        },
+        ".marker-target": {
+          "fill": "grey",
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        }
+      }
+    }
+  ]
+}
