@@ -1,0 +1,55 @@
+Repos och brancher:
+polopoly/dlind-viziant-webapp
+gong/dlind-viziant
+content-api-sdks/dlind-viziant
+content-api-annotations-maven-plugin/dlind-new-style-converter-content
+
+TODO:
+* 400 Bad Request vid autentisering. Varför?
+* Gör Viziant till en chrome extension. Det löser såväl CORS-problemen som paketeringen.
+* Varför får jag inte ut några composers när jag hämtar en variant config i varianten atex.onecms.variantmodel?
+	ex:
+      "contentData" : {
+         "data" : {
+            "defaultComposers" : [],
+            "composers" : {
+               "p.siteengine.SiteRoot" : []   <-- TOMT!!
+            },
+            "mappers" : {
+               "com.atex.onecms.app.siteengine.PageBean" : "mapper-com.atex.gong.wiring.statistics.PageToThinAspectMapper",
+               "com.atex.onecms.app.siteengine.SiteBean" : "mapper-com.atex.gong.wiring.statistics.SiteToThinAspectMapper",
+               "com.atex.standard.article.ArticleBean" : "mapper-com.atex.gong.wiring.statistics.ArticleToThinAspectMapper"
+            }
+         },
+         "version" : "policy:3.226:1464700701"
+      }
+
+
+* Skriv composers/mappers som spottar ur sig en variant-model i JSON
+	- Har disablat composern som trålar igenom allt från CM config och nedåt. 
+	- Om sök av input templates funkar så är det ett bättre sätt än att tråla via cm config.
+* etc... 
+
+
+Ops:
+curl 'http://localhost:8081/content-hub/onecms/search/internal/select?q=inputTemplate:com.atex.onecms.content.ContentManager.config&variant=atex.onecms.variantmodel&format=json+noTypes'|json_pp
+
+curl 'http://localhost:8081/content-hub/onecms/search/internal/select?q=inputTemplate:com.polopoly.data.Variant.config&variant=atex.onecms.variantmodel&format=json+noTypes'|json_pp
+
+curl 'http://localhost:8081/content-hub/onecms/search/internal/select?q=inputTemplate:atex.onecms.ReadComposerHook&variant=atex.onecms.variantmodel&format=json+noTypes'|json_pp
+
+curl 'http://localhost:8081/content-hub/onecms/search/internal/select?q=inputTemplate:atex.onecms.AspectMapperHook&variant=atex.onecms.variantmodel&format=json+noTypes'|json_pp
+
+Starta corsproxy med:
+% corsproxy
+
+Done:
+* Använd ReadComposerHook input template instället för p.model.Pojo
+* Sök med variant
+* Sök efter input templates
+	- Verkar funka för:
+		'com.atex.onecms.content.ContentManager.config'
+		'com.polopoly.data.Variant.config'
+		'atex.onecms.ReadComposerHook'
+		'atex.onecms.AspectMapperHook'
+* Flytta in viziant i en webapp? Skulle det lösa CORS-problemet? (får inte söka på localhost:8081/content-hub)
